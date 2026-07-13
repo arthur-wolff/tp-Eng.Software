@@ -19,8 +19,17 @@ O InvenTree busca atender a demanda sobre um sistema de gerenciamento de estoque
 
 ## Qual "trabalho" o usuário deseja realizar ?
 
-O usuário que busca o InvenTree, tem como necessidade um sistema para auxiliar no gerenciamento de um possível estoque, facilitando assim a administração do mesmo. Podendo adicionar, editar e remover itens, gerenciar fornecedores e agendar pedidos, acompanhar processos de montagem de itens e gerar relatórios sobre o estoque.
+Quando um usuário precisa gerenciar um estoque com multiplos fornecedores, locais de deposito, peças e sub-peças, ele busca visuabilidade rápida e clara sobre o que está disponivel no estoque e o que precisa ser reposto, caso contrario os processos não sejam interrompidos nem sofram com a falta de algum material que por engano não está disponivel para a tarefa em que ele é necessário 
 
 ## Onde há falhas ou oportunidades ? 
 
-O Projeto possui uma label no github, chamada roadmap, onde são categorizados issues que estão no caminho de serem implementadas e priorizadas. Entre alguma dessas 
+O Projeto possui uma label no github, chamada roadmap, onde são categorizados issues que estão no caminho de serem implementadas e priorizadas, além de mais algumas que são adicionadas pela propria comunidade, que revelam pontos a serem resolvidos/aprimorados, podemos citar:
+
+- **Initial Stock Data fields are missing in Add Part form when enabled**
+([#12266](https://github.com/inventree/InvenTree/issues/12266)) Mesmo com a opção "Initial stock data" habilitada no painel admin, o formulario de criação de peça não exibe campos para informar o estoque inicial. 
+
+- **Adding/pulling custom status text in printable labels/reports**
+([#11973](https://github.com/inventree/InvenTree/issues/11973)) Quando o usuário utiliza status costumizados de estoque, não conseguem "imprimir" o texto descritivo desse status nas tags.
+
+- **Decrementing Non-Tracked Stock When Completing Build Output**
+([#11228](https://github.com/inventree/InvenTree/issues/11228)) Em uma ordem de produção de longa duração, o estoque "disponivel" de materia-prima não rastreada não é atualizado corretamente conforme os build outputs, gerando informação impresisa. 
